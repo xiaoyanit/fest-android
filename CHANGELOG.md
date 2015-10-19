@@ -1,6 +1,68 @@
 Change Log
 ==========
 
+Version 1.1.1 *(2015-10-17)*
+----------------------------
+
+ * Add assertion for `Uri`.
+ * New: Overload for `IntentAssert.hasExtra` which takes a value to compare.
+ * Fix: `NotificationAssert.hasFlags` now checks to see if the specified flags are set while allowing
+   unspecified flags to also be set. Use `hasOnlyFlags` to check for an exact match.
+ * Fix: `TabLayoutAssert.hasTabMode` now correctly compares against the tab mode instead of count.
+
+
+Version 1.1.0 *(2015-08-15)*
+----------------------------
+
+ * New: Design library add-on module! Includes assertions for `NavigationView`, `Snackbar`,
+   `TabLayout`, and `TabLayout.Tab`.
+ * Fix: Correct `minSdkVersion` declared in Card View, Palette, and Recycler View modules.
+
+
+Version 1.0.1 *(2015-07-23)*
+----------------------------
+
+ * Add assertions for `CameraPosition`, `GoogleMap`, `Marker`, and `UiSettings` to Play Services.
+ * Change methods taking a `boolean` to have individual "enabled" and "disabled" assertions in
+   Play Services.
+ * Add string conversions for `Activity`, `Display`, `TextView` and `View` flag assertions messages.
+ * Moved assertions from `ListViewAssert` to `AbstractListViewAssert`.
+ * Fix: Use correct value from view for `NumberPickerAssert.hasValue`.
+ * Fix: Correct `Intent.hasFlags` assert and update its known flags.
+ * Fix: Update AppCompat's `SearchView` assertion to reflect it extending from `LinearLayout`.
+
+
+Version 1.0.0 *(2014-08-27)*
+----------------------------
+
+Convert project from 'fest-android' to 'assertj-android'.
+
+ * New: Add-on modules!
+   * Support library (v4)
+   * Google Play Services
+   * AppCompat (v7)
+   * Media Router (v7)
+   * Grid Layout (v7)
+   * Recycler View (v7)
+   * Card View (v7)
+   * Pallete (v7)
+
+
+----
+
+NOTE: The following change log is from the 'fest-android' releases which remain
+a part of this repository history.
+
+Version 1.0.8 *(2014-04-05)*
+----------------------------
+
+ * New assertions:
+   * `android.content.SharedPreferences`
+ * Added `hasItem` and `doesNotHaveItem` check to `Adapter`.
+ * Added `hasRequestedOrientation` check to `Activity`.
+ * Fix: `TextView`'s `endsWith` now properly matches the end of text instead of start.
+
+
 Version 1.0.7 *(2013-09-11)*
 ----------------------------
 
